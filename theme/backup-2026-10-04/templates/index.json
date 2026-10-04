@@ -1,0 +1,296 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tänderna är snabbare än viljestyrkan.",
+            "heading_size": "h1"
+          }
+        },
+        "e62406f3-194d-4849-a414-48c082505231": {
+          "type": "text",
+          "settings": {
+            "text": "Bitter nagelpenna som säger till i stunden.",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Välj paket",
+            "button_link_1": "shopify://products/bryda-nagelpennan",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "e62406f3-194d-4849-a414-48c082505231",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_08_35_55_PM.png",
+        "image_overlay_opacity": 30,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "bryda_trust": {
+      "type": "bryda-trust-bar",
+      "blocks": {
+        "t1": {
+          "type": "item",
+          "settings": {
+            "title": "Fri frakt",
+            "text": "från 2 pennor"
+          }
+        },
+        "t2": {
+          "type": "item",
+          "settings": {
+            "title": "30 dagars öppet köp",
+            "text": "ingen motivering krävs"
+          }
+        },
+        "t3": {
+          "type": "item",
+          "settings": {
+            "title": "Skickas från Sverige",
+            "text": "1–3 arbetsdagar"
+          }
+        },
+        "t4": {
+          "type": "item",
+          "settings": {
+            "title": "Betala med Klarna",
+            "text": "eller kort"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "bryda_igen": {
+      "type": "bryda-igen",
+      "settings": {
+        "color_scheme": "background-1",
+        "eyebrow": "",
+        "heading": "Känner du igen dig?",
+        "list": "Händerna under bordet på möten.\nDu märker först efteråt att du bitit.\n”Nu slutar jag.” Igen.",
+        "closing": "<p><strong>Det är inte viljestyrkan. Det är autopilot.</strong></p>",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "bryda_steps": {
+      "type": "bryda-how-it-works",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Stryk på",
+            "text": "Ett tunt lager. Torkar på sekunder."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "Syns inte",
+            "text": "Ingen behöver veta."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Smaken säger till",
+            "text": "Du hinner stanna upp innan du biter."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "eyebrow": "",
+        "heading": "Så funkar det",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "bryda_jamfor": {
+      "type": "bryda-jamfor",
+      "settings": {
+        "color_scheme": "background-1",
+        "eyebrow": "",
+        "heading": "Bryda vs. bara viljestyrka",
+        "col_a": "Bryda",
+        "col_b": "Viljestyrka",
+        "rows": "Säger till i stunden|ja|nej\nFunkar på autopilot|ja|nej\nSyns inte|ja|ja\nPengarna tillbaka|ja|nej",
+        "button_label": "Välj paket",
+        "button_link": "/products/bryda-nagelpennan",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "bryda_paket": {
+      "type": "bryda-paket",
+      "settings": {
+        "product": "bryda-nagelpennan",
+        "color_scheme": "background-2",
+        "eyebrow": "",
+        "heading": "Välj paket",
+        "text": "Fri frakt från 2 pennor.",
+        "footnote": "",
+        "padding_top": 56,
+        "padding_bottom": 64
+      }
+    },
+    "bryda_founder": {
+      "type": "bryda-founder-story",
+      "settings": {
+        "color_scheme": "background-1",
+        "eyebrow": "",
+        "heading": "Varför jag gjorde Bryda",
+        "story": "<p>Jag har bitit på naglarna hela livet. Läkaren sa ”skärp dig”. Men problemet var aldrig viljan, jag märkte bara inte när jag bet. Så jag gjorde Bryda.</p>",
+        "signature": "— Fabian, grundare av Bryda",
+        "button_label": "Lägg i varukorg",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "bryda_garanti": {
+      "type": "rich-text",
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "30 dagars öppet köp",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Funkar den inte? Pengarna tillbaka.</p>"
+          }
+        },
+        "b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Välj paket",
+            "button_link": "shopify://products/bryda-nagelpennan",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "h",
+        "t",
+        "b"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "bryda_faq": {
+      "type": "bryda-faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Bittert lack har inte funkat för mig. Varför skulle det här göra det?",
+            "answer": "<p>Vi lovar inga mirakel. Pennan lägger en smak i vägen så att du märker när du biter. Funkar den inte får du pengarna tillbaka.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "Syns den på naglarna?",
+            "answer": "<p>Nej. Den syns inte och torkar på några sekunder.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "Hur funkar öppet köp?",
+            "answer": "<p>Mejla <a href=\"mailto:kontakt@bryda.se\">kontakt@bryda.se</a> inom 30 dagar så får du pengarna tillbaka. Du står för returfrakten.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "När kommer paketet?",
+            "answer": "<p>Normalt inom 1–3 arbetsdagar. Vi skickar från Sverige.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "eyebrow": "",
+        "heading": "Vanliga frågor",
+        "contact": "<p>Fler frågor? <a href=\"mailto:kontakt@bryda.se\">kontakt@bryda.se</a></p>",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "bryda_trust",
+    "bryda_igen",
+    "bryda_steps",
+    "bryda_jamfor",
+    "bryda_paket",
+    "bryda_founder",
+    "bryda_garanti",
+    "bryda_faq"
+  ]
+}

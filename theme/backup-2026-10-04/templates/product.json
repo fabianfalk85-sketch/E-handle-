@@ -1,0 +1,250 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "bryda_sub": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>.bryda-sub{margin:-4px 0 10px;font-family:'Familjen Grotesk',sans-serif;font-size:16px;line-height:1.45;color:#5A5E52}</style><p class='bryda-sub'>Smaken säger till innan du hunnit bita.</p>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "bryda_fordelar": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>.bryda-fordelar{list-style:none;margin:2px 0 20px;padding:0;display:flex;flex-wrap:wrap;gap:8px 18px}.bryda-fordelar li{display:flex;align-items:center;gap:6px;margin:0;font-family:'Familjen Grotesk',sans-serif;font-size:15px;color:#1B1D17}.bryda-fordelar svg{width:15px;height:15px;flex:0 0 15px}</style><ul class='bryda-fordelar'><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Genuint bitter</span></li><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Syns inte på naglarna</span></li><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Torkar på sekunder</span></li></ul>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "6be97d63-573b-4835-829c-196a84847fef": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>.product__tax{display:none !important}.bryda-trygg{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;font-family:'Familjen Grotesk',sans-serif;font-size:13px;color:#5A5E52}.bryda-trygg li{display:flex;align-items:center;gap:6px;margin:0}.bryda-trygg svg{width:13px;height:13px;flex:0 0 13px}</style><ul class='bryda-trygg'><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>30 dagars öppet köp</span></li><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Skickas från Sverige</span></li><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Klarna</span></li></ul>"
+          }
+        },
+        "a778d8d8-1d0e-4d5c-b6b9-2f340752528e": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Så använder du den",
+            "icon": "question_mark",
+            "content": "<p>Stryk ett tunt lager på naglarna och låt torka. Stryk på igen när smaken mattats.</p>",
+            "page": ""
+          }
+        },
+        "e3f541c0-8fbd-4937-962d-459921154f37": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Frakt och retur",
+            "icon": "truck",
+            "content": "<p>Skickas från Sverige, normalt framme inom 1–3 arbetsdagar. Fri frakt från 2 pennor. 30 dagars öppet köp via <a href=\"mailto:kontakt@bryda.se\">kontakt@bryda.se</a>.</p>",
+            "page": ""
+          }
+        },
+        "bryda_antal": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'bryda-antal', product: product, section_id: section.id %}"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "bryda_sub",
+        "price",
+        "bryda_fordelar",
+        "bryda_antal",
+        "buy_buttons",
+        "6be97d63-573b-4835-829c-196a84847fef",
+        "a778d8d8-1d0e-4d5c-b6b9-2f340752528e",
+        "e3f541c0-8fbd-4937-962d-459921154f37"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": true,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "bryda_steps": {
+      "type": "bryda-how-it-works",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Stryk på",
+            "text": "Ett tunt lager. Torkar på sekunder."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "Syns inte",
+            "text": "Ingen behöver veta."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Smaken säger till",
+            "text": "Du hinner stanna upp innan du biter."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "eyebrow": "",
+        "heading": "Så funkar det",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "bryda_jamfor": {
+      "type": "bryda-jamfor",
+      "settings": {
+        "color_scheme": "background-1",
+        "eyebrow": "",
+        "heading": "Bryda vs. bara viljestyrka",
+        "col_a": "Bryda",
+        "col_b": "Viljestyrka",
+        "rows": "Säger till i stunden|ja|nej\nFunkar på autopilot|ja|nej\nSyns inte|ja|ja\nPengarna tillbaka|ja|nej",
+        "button_label": "Välj paket",
+        "button_link": "#MainContent",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "bryda_garanti": {
+      "type": "rich-text",
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "30 dagars öppet köp",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Funkar den inte? Pengarna tillbaka.</p>"
+          }
+        },
+        "b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Välj paket",
+            "button_link": "shopify://products/bryda-nagelpennan",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "h",
+        "t",
+        "b"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "bryda_faq": {
+      "type": "bryda-faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Bittert lack har inte funkat för mig. Varför skulle det här göra det?",
+            "answer": "<p>Vi lovar inga mirakel. Pennan lägger en smak i vägen så att du märker när du biter. Funkar den inte får du pengarna tillbaka.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "Syns den på naglarna?",
+            "answer": "<p>Nej. Den syns inte och torkar på några sekunder.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "Hur funkar öppet köp?",
+            "answer": "<p>Mejla <a href=\"mailto:kontakt@bryda.se\">kontakt@bryda.se</a> inom 30 dagar så får du pengarna tillbaka. Du står för returfrakten.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "När kommer paketet?",
+            "answer": "<p>Normalt inom 1–3 arbetsdagar. Vi skickar från Sverige.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "eyebrow": "",
+        "heading": "Vanliga frågor",
+        "contact": "<p>Fler frågor? <a href=\"mailto:kontakt@bryda.se\">kontakt@bryda.se</a></p>",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bryda_steps",
+    "bryda_jamfor",
+    "bryda_garanti",
+    "bryda_faq"
+  ]
+}
