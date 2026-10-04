@@ -1,41 +1,47 @@
 {%- style -%}
-  .bryda-tidslinje-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
-  .bryda-tidslinje-{{ section.id }} .eyebrow { font-family: var(--font-mono-family); font-size: 1.2rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.6; text-align: center; margin: 0 0 1.4rem; }
-  .bryda-tidslinje-{{ section.id }} h2 { text-align: center; font-size: clamp(2.8rem, 4.4vw, 4.2rem); margin: 0 0 4rem; }
-  .bryda-tidslinje-{{ section.id }} .list { list-style: none; margin: 0 auto; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 3.2rem; max-width: 1000px; }
-  .bryda-tidslinje-{{ section.id }} .item { position: relative; margin: 0; padding-top: 3.2rem; }
-  .bryda-tidslinje-{{ section.id }} .item::before { content: ''; position: absolute; top: 6px; left: 0; right: -3.2rem; height: 1px; background: rgba(var(--color-foreground), 0.2); }
+  .bryda-tidslinje-{{ section.id }} { padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px; padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px; }
+  @media screen and (min-width: 750px) { .bryda-tidslinje-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; } }
+  .bryda-tidslinje-{{ section.id }} .wrap { max-width: 100rem; }
+  .bryda-tidslinje-{{ section.id }} .eyebrow { font-family: var(--font-mono-family); font-size: 1.3rem; line-height: 1.5; letter-spacing: 0.04em; color: #4F5B45; margin: 0 0 1.2rem; max-width: 60ch; }
+  .bryda-tidslinje-{{ section.id }} h2 { font-size: clamp(2.8rem, 2.2rem + 1.8vw, 4rem); line-height: 1.05; margin: 0; max-width: 24ch; text-wrap: balance; }
+  .bryda-tidslinje-{{ section.id }} .text { margin-top: 2rem; max-width: 60ch; }
+  .bryda-tidslinje-{{ section.id }} .text p { font-size: 1.7rem; line-height: 1.6; margin: 0 0 1.2rem; }
+  .bryda-tidslinje-{{ section.id }} .text p:last-child { margin-bottom: 0; }
+  @media screen and (min-width: 750px) { .bryda-tidslinje-{{ section.id }} .text p { font-size: 1.8rem; } }
+  .bryda-tidslinje-{{ section.id }} .list { --dot: 14px; list-style: none; margin: 3.2rem 0 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 0; }
+  .bryda-tidslinje-{{ section.id }} .item { position: relative; margin: 0; padding: 0 0 3.2rem calc(var(--dot) + 1.8rem); }
+  .bryda-tidslinje-{{ section.id }} .item:last-child { padding-bottom: 0; }
+  .bryda-tidslinje-{{ section.id }} .item::before { content: ''; position: absolute; left: calc(var(--dot) / 2 - 1px); width: 2px; top: 10px; bottom: -10px; background: rgba(var(--color-foreground), 0.2); }
   .bryda-tidslinje-{{ section.id }} .item:last-child::before { display: none; }
-  .bryda-tidslinje-{{ section.id }} .dot { position: absolute; top: 0; left: 0; width: 13px; height: 13px; border-radius: 50%; background: #4F5B45; box-shadow: 0 0 0 4px rgb(var(--color-background)); }
-  .bryda-tidslinje-{{ section.id }} .label { font-family: var(--font-mono-family); font-size: 1.2rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #4F5B45; margin: 0 0 1rem; }
-  .bryda-tidslinje-{{ section.id }} .text { font-size: 1.7rem; line-height: 1.5; margin: 0; }
-  .bryda-tidslinje-{{ section.id }} .foot { text-align: center; max-width: 56rem; margin: 4rem auto 0; font-size: 1.3rem; line-height: 1.55; color: rgba(var(--color-foreground), 0.6); }
-  @media screen and (max-width: 749px) {
-    .bryda-tidslinje-{{ section.id }} h2 { margin-bottom: 3.2rem; }
-    .bryda-tidslinje-{{ section.id }} .list { grid-template-columns: 1fr; gap: 0; max-width: 46rem; }
-    .bryda-tidslinje-{{ section.id }} .item { padding: 0 0 3.2rem 3.4rem; }
-    .bryda-tidslinje-{{ section.id }} .item:last-child { padding-bottom: 0; }
-    .bryda-tidslinje-{{ section.id }} .item::before { top: 8px; bottom: -2px; left: 6px; right: auto; width: 1px; height: auto; }
-    .bryda-tidslinje-{{ section.id }} .dot { top: 2px; }
-    .bryda-tidslinje-{{ section.id }} .text { font-size: 1.6rem; }
-    .bryda-tidslinje-{{ section.id }} .foot { text-align: left; margin-top: 3.2rem; }
+  .bryda-tidslinje-{{ section.id }} .dot { position: absolute; z-index: 1; left: 0; top: 3px; width: var(--dot); height: var(--dot); border-radius: 50%; background: #4F5B45; box-shadow: 0 0 0 4px rgb(var(--color-background)); }
+  .bryda-tidslinje-{{ section.id }} .label { font-family: var(--font-mono-family); font-size: 1.2rem; font-weight: 500; line-height: 2rem; letter-spacing: 0.1em; text-transform: uppercase; color: #4F5B45; margin: 0 0 0.6rem; }
+  .bryda-tidslinje-{{ section.id }} .desc { font-size: 1.7rem; line-height: 1.6; margin: 0; max-width: 60ch; }
+  .bryda-tidslinje-{{ section.id }} .foot { margin: 3.2rem 0 0; max-width: 60ch; font-size: 1.4rem; line-height: 1.55; color: rgba(var(--color-foreground), 0.65); }
+  @media screen and (min-width: 750px) {
+    .bryda-tidslinje-{{ section.id }} .list { grid-template-columns: repeat(3, 1fr); gap: 3.2rem; }
+    .bryda-tidslinje-{{ section.id }} .item { padding: 3.2rem 0 0; }
+    .bryda-tidslinje-{{ section.id }} .item::before { left: 0; right: -3.2rem; top: calc(var(--dot) / 2 - 1px); bottom: auto; width: auto; height: 2px; }
+    .bryda-tidslinje-{{ section.id }} .dot { top: 0; }
+    .bryda-tidslinje-{{ section.id }} .desc { font-size: 1.8rem; }
   }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width bryda-tidslinje-{{ section.id }}">
-    {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
-    <h2>{{ section.settings.heading }}</h2>
-    <ol class="list">
-      {%- for block in section.blocks -%}
-        <li class="item" {{ block.shopify_attributes }}>
-          <span class="dot" aria-hidden="true"></span>
-          <p class="label">{{ block.settings.label }}</p>
-          <p class="text">{{ block.settings.text }}</p>
-        </li>
-      {%- endfor -%}
-    </ol>
-    {%- if section.settings.footnote != blank -%}<p class="foot">{{ section.settings.footnote }}</p>{%- endif -%}
+    <div class="wrap">
+      {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2>{{ section.settings.heading }}</h2>
+      <ol class="list">
+        {%- for block in section.blocks -%}
+          <li class="item" {{ block.shopify_attributes }}>
+            <span class="dot" aria-hidden="true"></span>
+            <p class="label">{{ block.settings.label }}</p>
+            <p class="desc">{{ block.settings.text }}</p>
+          </li>
+        {%- endfor -%}
+      </ol>
+      {%- if section.settings.footnote != blank -%}<p class="foot">{{ section.settings.footnote }}</p>{%- endif -%}
+    </div>
   </div>
 </div>
 
@@ -46,9 +52,9 @@
   "class": "section",
   "settings": [
     { "type": "color_scheme", "id": "color_scheme", "label": "Färgschema", "default": "background-1" },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
-    { "type": "text", "id": "heading", "label": "Rubrik", "default": "Vad som händer" },
-    { "type": "textarea", "id": "footnote", "label": "Fotnot" },
+    { "type": "text", "id": "eyebrow", "label": "Etikett" },
+    { "type": "text", "id": "heading", "label": "Rubrik", "default": "Så här kan det se ut" },
+    { "type": "textarea", "id": "footnote", "label": "Fotnot (valfri)" },
     { "type": "range", "id": "padding_top", "min": 0, "max": 120, "step": 4, "unit": "px", "label": "Padding top", "default": 64 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 120, "step": 4, "unit": "px", "label": "Padding bottom", "default": 64 }
   ],
@@ -57,7 +63,7 @@
       "type": "step",
       "name": "Steg",
       "settings": [
-        { "type": "text", "id": "label", "label": "Etikett", "default": "Direkt" },
+        { "type": "text", "id": "label", "label": "Etikett", "default": "Från första dagen" },
         { "type": "textarea", "id": "text", "label": "Text", "default": "Text" }
       ]
     }

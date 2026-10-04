@@ -4,3 +4,10 @@
 - `sections/bryda-varfor.liquid`, `sections/bryda-tidslinje.liquid` – nya sektioner.
 - `templates/index.json`, `templates/product.json`, `sections/header-group.json` – nya versioner som laddats upp till utkastet.
 - Övrigt i utkastet: `sections/image-banner.liquid` (textblockets limit 1 → 2), `templates/page.contact.json` och `templates/password.json` översatta till svenska.
+
+## Uppdrag v2 (2026-10-04)
+
+- `backup-v2-2026-10-04/` – `index.json`, `product.json` och `header-group.json` från utkastet innan v2.
+- `sections/bryda-varfor.liquid` (nu "Bryda Text"), `bryda-how-it-works.liquid` (ny richtext-inställning `text`), `bryda-tidslinje.liquid`, `bryda-faq.liquid`, `bryda-paket.liquid` – omskrivna för mobil först, vänsterställd text, 60ch, 17px, samma padding 64/48.
+- `templates/index.json`, `templates/product.json` – ny ordning och copy enligt v2-briefen. founder/igen/jämför är borttagna ur mallarna (filerna finns kvar).
+- `sections/header-group.json` – land/språkväljare av, v2-CSS tillagd i bryda-besk-stil.

@@ -10,7 +10,7 @@
     "bryda_sub": {
      "type": "custom_liquid",
      "settings": {
-      "custom_liquid": "<style>.bryda-sub{margin:-4px 0 10px;font-family:'Familjen Grotesk',sans-serif;font-size:16px;line-height:1.45;color:#5A5E52}</style><p class='bryda-sub'>Bitter nagelpenna för naglar du inte behöver gömma.</p>"
+      "custom_liquid": "<style>.bryda-sub{margin:-4px 0 10px;font-family:'Familjen Grotesk',sans-serif;font-size:16px;line-height:1.45;color:#5A5E52}</style><p class='bryda-sub'>Stoppar biten innan den hunnit börja.</p>"
      }
     },
     "price": {
@@ -20,7 +20,7 @@
     "bryda_fordelar": {
      "type": "custom_liquid",
      "settings": {
-      "custom_liquid": "<style>.bryda-fordelar{list-style:none;margin:2px 0 20px;padding:0;display:flex;flex-wrap:wrap;gap:8px 18px}.bryda-fordelar li{display:flex;align-items:center;gap:6px;margin:0;font-family:'Familjen Grotesk',sans-serif;font-size:15px;color:#1B1D17}.bryda-fordelar svg{width:15px;height:15px;flex:0 0 15px}</style><ul class='bryda-fordelar'><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Riktigt bitter</span></li><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Syns inte på naglarna</span></li><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Torkar på sekunder</span></li><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Nytt lager på sekunder</span></li></ul>"
+      "custom_liquid": "<style>.bryda-fordelar{list-style:none;margin:2px 0 20px;padding:0;display:flex;flex-wrap:wrap;gap:8px 18px}.bryda-fordelar li{display:flex;align-items:center;gap:6px;margin:0;font-family:'Familjen Grotesk',sans-serif;font-size:15px;color:#1B1D17}.bryda-fordelar svg{width:15px;height:15px;flex:0 0 15px}</style><ul class='bryda-fordelar'><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Riktigt bitter</span></li><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Syns inte</span></li><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Torkar på sekunder</span></li><li><svg viewBox='0 0 16 16' fill='none' aria-hidden='true'><path d='M2.5 8.5l3.5 3.5 7.5-8' stroke='#4F5B45' stroke-width='1.6'/></svg><span>Ryms i fickan</span></li></ul>"
      }
     },
     "buy_buttons": {
@@ -41,7 +41,7 @@
      "settings": {
       "heading": "Så använder du den",
       "icon": "question_mark",
-      "content": "<p>Stryk ett tunt lager på naglarna och runt nagelkanten. Låt torka några sekunder. Stryk på igen varannan till var tredje dag, och efter att du tvättat händerna mycket.</p>",
+      "content": "<p>Stryk ett tunt lager på naglarna och runt nagelkanten. Låt torka några sekunder. Lägg på igen varannan till var tredje dag, och efter att du tvättat händerna mycket.</p>",
       "page": ""
      }
     },
@@ -88,26 +88,14 @@
     "padding_bottom": 12
    }
   },
-  "bryda_igen": {
-   "type": "bryda-igen",
-   "settings": {
-    "color_scheme": "background-2",
-    "eyebrow": "",
-    "heading": "Känner du igen dig?",
-    "list": "Händerna under bordet på möten.\nDu märker först efteråt att du bitit.\nHandslag, bilder, dejter – du tänker på naglarna.\n”Nu slutar jag.” Igen.",
-    "closing": "<p><strong>Det är inte viljestyrkan. Det är autopilot.</strong></p>",
-    "padding_top": 64,
-    "padding_bottom": 64
-   }
-  },
-  "bryda_varfor": {
+  "bryda_kanns": {
    "type": "bryda-varfor",
    "settings": {
-    "color_scheme": "background-1",
-    "eyebrow": "",
-    "heading": "Varför det inte funkat förut",
-    "text": "<p>Det vanligaste klagomålet på bittert nagellack är att man vänjer sig vid smaken. Efter några dagar biter man igen, utan att märka det.</p>",
-    "highlight": "Bryda är riktigt bitter. Det är hela poängen.",
+    "color_scheme": "background-2",
+    "eyebrow": "Fler biter på naglarna än du tror – killar faktiskt oftare än tjejer.",
+    "heading": "Du har redan bestämt dig. Flera gånger.",
+    "text": "<p>Du vet hur det känns att gömma händerna när någon tittar. Att tänka på naglarna innan ett handslag på en jobbintervju, när du räcker över telefonen för att visa något, eller när någon tar din hand. Och du har försökt sluta, på riktigt.</p><p>Men biten händer inte när du bestämt dig. Den händer framför tv:n, i bilen och mitt i ett jobbmejl, när tankarna är någon annanstans.</p>",
+    "highlight": "Därför räcker inte viljestyrka.",
     "padding_top": 64,
     "padding_bottom": 64
    }
@@ -119,21 +107,21 @@
      "type": "step",
      "settings": {
       "title": "Stryk på",
-      "text": "Ett tunt lager. Torkar på sekunder."
+      "text": "Tar några sekunder."
      }
     },
     "s2": {
      "type": "step",
      "settings": {
-      "title": "Syns inte",
-      "text": "Ingen behöver veta."
+      "title": "Torkar osynligt",
+      "text": "Ingen ser något."
      }
     },
     "s3": {
      "type": "step",
      "settings": {
-      "title": "Smaken säger till",
-      "text": "Du hinner stanna upp innan du biter."
+      "title": "Du stannar upp",
+      "text": "Innan du hunnit bita."
      }
     }
    },
@@ -143,11 +131,24 @@
     "s3"
    ],
    "settings": {
+    "color_scheme": "background-1",
+    "eyebrow": "",
+    "heading": "Bryda säger till precis när det behövs.",
+    "text": "<p>Du stryker på ett tunt lager på naglarna. Nästa gång fingret når munnen smakar det så bittert att du stannar upp direkt. Ingen ser att du har den på dig, och ingen behöver säga något. Smaken gör jobbet åt dig, varje gång.</p>",
+    "padding_top": 64,
+    "padding_bottom": 64
+   }
+  },
+  "bryda_varfor": {
+   "type": "bryda-varfor",
+   "settings": {
     "color_scheme": "background-2",
     "eyebrow": "",
-    "heading": "Du biter utan att tänka. Smaken ser till att du tänker.",
-    "padding_top": 56,
-    "padding_bottom": 56
+    "heading": "Bitter på riktigt.",
+    "text": "<p>Många som testat bittert nagellack säger samma sak: efter några dagar märkte de knappt smaken. Bryda är gjord för att vara precis så bitter som den säger att den är.</p>",
+    "highlight": "Och eftersom det är en penna och inte en flaska tar det fem sekunder att fylla på. På bussen, på jobbet, var som helst.",
+    "padding_top": 64,
+    "padding_bottom": 64
    }
   },
   "bryda_tidslinje": {
@@ -156,22 +157,22 @@
     "t1": {
      "type": "step",
      "settings": {
-      "label": "DIREKT",
-      "text": "Du märker varje gång fingret når munnen."
+      "label": "FRÅN FÖRSTA DAGEN",
+      "text": "Du märker varje gång fingret letar sig upp mot munnen. Det är där vanan börjar brytas."
      }
     },
     "t2": {
      "type": "step",
      "settings": {
       "label": "EFTER NÅGRA VECKOR",
-      "text": "Kanterna och huden runt naglarna börjar läka. Du slutar gömma händerna."
+      "text": "Huden runt naglarna har fått läka, och du slutar tänka på händerna i möten."
      }
     },
     "t3": {
      "type": "step",
      "settings": {
       "label": "EFTER 2–3 MÅNADER",
-      "text": "Naglar som ser normala ut. Inget att gömma."
+      "text": "Naglar du inte behöver gömma längre."
      }
     }
    },
@@ -183,21 +184,38 @@
    "settings": {
     "color_scheme": "background-1",
     "eyebrow": "",
-    "heading": "Vad som händer",
-    "footnote": "Naglar växer ungefär 3 mm i månaden. Det kan ingen penna ändra på – men den ser till att du låter dem vara.",
+    "heading": "Så här kan det se ut",
+    "footnote": "",
     "padding_top": 64,
     "padding_bottom": 64
    }
   },
-  "bryda_founder": {
-   "type": "bryda-founder-story",
+  "bryda_garanti": {
+   "type": "rich-text",
+   "blocks": {
+    "h": {
+     "type": "heading",
+     "settings": {
+      "heading": "Testa i 30 dagar.",
+      "heading_size": "h2"
+     }
+    },
+    "t": {
+     "type": "text",
+     "settings": {
+      "text": "<p>Om Bryda inte hjälper dig får du pengarna tillbaka. Inga konstiga frågor.</p>"
+     }
+    }
+   },
+   "block_order": [
+    "h",
+    "t"
+   ],
    "settings": {
+    "desktop_content_position": "left",
+    "content_alignment": "left",
     "color_scheme": "background-2",
-    "eyebrow": "",
-    "heading": "Varför jag gjorde Bryda",
-    "story": "<p>Jag har bitit på naglarna hela livet. Läkaren sa ”skärp dig”. Men problemet var aldrig viljan, jag märkte bara inte när jag bet. Så jag gjorde Bryda.</p>",
-    "signature": "— Fabian, grundare av Bryda",
-    "button_label": "Lägg i varukorg",
+    "full_width": true,
     "padding_top": 64,
     "padding_bottom": 64
    }
@@ -208,50 +226,43 @@
     "q1": {
      "type": "question",
      "settings": {
-      "question": "Bittert lack har inte funkat för mig. Varför skulle det här göra det?",
-      "answer": "<p>Vi lovar inga mirakel. Pennan lägger en smak i vägen så att du märker när du biter. Funkar den inte får du pengarna tillbaka.</p>"
+      "question": "Jag har testat bittert lack förut. Varför skulle det här funka?",
+      "answer": "<p>Oftast ger man upp för att smaken var för svag eller för att det var krångligt att fylla på. Bryda är riktigt bitter och sitter i en penna du kan ha i fickan, så ett nytt lager tar några sekunder. Och skulle den inte funka för dig har du 30 dagars öppet köp.</p>"
      }
     },
     "q2": {
      "type": "question",
      "settings": {
-      "question": "Vänjer man sig inte vid smaken?",
-      "answer": "<p>Smaken mattas med tiden. Stryk därför på ett nytt lager varannan till var tredje dag. Med pennan tar det några sekunder.</p>"
+      "question": "Är det nagellack?",
+      "answer": "<p>Nej. Inget färgat lack, inget som syns. Ett tunt lager som torkar på några sekunder. Ingen ser att du har den, varken på jobbet, på gymmet eller på stan.</p>"
      }
     },
     "q3": {
      "type": "question",
      "settings": {
-      "question": "Hamnar smaken på maten?",
-      "answer": "<p>Ja, om du äter med fingrarna. Tvätta händerna innan du äter eller ät med bestick.</p>"
+      "question": "Hur ofta ska jag lägga på?",
+      "answer": "<p>Varannan till var tredje dag, och efter att du tvättat händerna mycket. Med pennan går det på fem sekunder.</p>"
      }
     },
     "q4": {
      "type": "question",
      "settings": {
-      "question": "Syns den på naglarna?",
-      "answer": "<p>Nej. Den syns inte och torkar på några sekunder.</p>"
+      "question": "Smakar maten bittert?",
+      "answer": "<p>Bara det du äter direkt med fingrarna. Lägg på efter maten eller tvätta händerna innan, så märker du inget.</p>"
      }
     },
     "q5": {
      "type": "question",
      "settings": {
-      "question": "Är den för vuxna?",
-      "answer": "<p>Ja. Bryda är gjord för vuxna som bitit i åratal och redan bestämt sig.</p>"
+      "question": "Funkar den om jag biter på huden runt naglarna?",
+      "answer": "<p>Ja. Stryk på runt nagelkanten också, så säger smaken till där med.</p>"
      }
     },
     "q6": {
      "type": "question",
      "settings": {
-      "question": "Hur funkar öppet köp?",
-      "answer": "<p>Mejla <a href=\"mailto:kontakt@bryda.se\">kontakt@bryda.se</a> inom 30 dagar så får du pengarna tillbaka. Du står för returfrakten.</p>"
-     }
-    },
-    "q7": {
-     "type": "question",
-     "settings": {
-      "question": "När kommer paketet?",
-      "answer": "<p>Normalt inom 1–3 arbetsdagar. Vi skickar från Sverige.</p>"
+      "question": "Hur snabbt kommer den?",
+      "answer": "<p>Vi skickar från Sverige och den är normalt hos dig inom 1–3 arbetsdagar. Fri frakt från 2 pennor.</p>"
      }
     }
    },
@@ -261,32 +272,31 @@
     "q3",
     "q4",
     "q5",
-    "q6",
-    "q7"
+    "q6"
    ],
    "settings": {
     "color_scheme": "background-1",
     "eyebrow": "",
     "heading": "Vanliga frågor",
     "contact": "<p>Fler frågor? <a href=\"mailto:kontakt@bryda.se\">kontakt@bryda.se</a></p>",
-    "padding_top": 56,
-    "padding_bottom": 56
+    "padding_top": 64,
+    "padding_bottom": 64
    }
   },
-  "bryda_garanti": {
+  "bryda_avslut": {
    "type": "rich-text",
    "blocks": {
     "h": {
      "type": "heading",
      "settings": {
       "heading": "Sluta gömma händerna.",
-      "heading_size": "h1"
+      "heading_size": "h2"
      }
     },
     "t": {
      "type": "text",
      "settings": {
-      "text": "<p>30 dagars öppet köp. Funkar den inte får du pengarna tillbaka.</p>"
+      "text": "<p>Ett tunt lager i dag. Naglar du är nöjd med om några månader.</p>"
      }
     },
     "b": {
@@ -311,19 +321,19 @@
     "content_alignment": "center",
     "color_scheme": "background-2",
     "full_width": true,
-    "padding_top": 56,
-    "padding_bottom": 56
+    "padding_top": 64,
+    "padding_bottom": 64
    }
   }
  },
  "order": [
   "main",
-  "bryda_igen",
-  "bryda_varfor",
+  "bryda_kanns",
   "bryda_steps",
+  "bryda_varfor",
   "bryda_tidslinje",
-  "bryda_founder",
+  "bryda_garanti",
   "bryda_faq",
-  "bryda_garanti"
+  "bryda_avslut"
  ]
 }

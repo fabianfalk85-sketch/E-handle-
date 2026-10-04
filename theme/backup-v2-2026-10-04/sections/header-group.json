@@ -1,0 +1,79 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "bryda-besk-stil": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<span id=\"bryda-besk-markor\" hidden></span>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..100,500..900&family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap\">\n<style>\n  :root {\n    --font-heading-family: 'Archivo', 'Arial Narrow', Arial, sans-serif;\n    --font-heading-style: normal;\n    --font-heading-weight: 800;\n    --font-body-family: 'Familjen Grotesk', 'Helvetica Neue', Arial, sans-serif;\n    --font-body-style: normal;\n    --font-body-weight: 400;\n    --font-body-weight-bold: 700;\n    --font-mono-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace;\n    --bryda-rot: #1B1D17;\n    --bryda-malort: #E7E9E2;\n    --bryda-gentiana: #4F5B45;\n    --bryda-mossa: #4F5B45;\n    --bryda-salvia: #9AA58F;\n    --bryda-bark: #5A5E52;\n  }\n\n  body { letter-spacing: 0; }\n\n  /* Rubriker: smal, tung, kantig */\n  h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, .hxl, .hxxl {\n    font-family: var(--font-heading-family);\n    font-weight: 800;\n    font-stretch: 72%;\n    letter-spacing: -0.012em;\n    line-height: 1.02;\n    text-wrap: balance;\n  }\n  .h0, .hxl, .hxxl, .banner__heading {\n    font-weight: 900;\n    font-stretch: 62%;\n    letter-spacing: -0.025em;\n    line-height: 0.92;\n  }\n  .product__title h1, .product__title h2 { font-stretch: 68%; font-weight: 900; }\n  .h4, h4, .h5, h5 { font-stretch: 85%; }\n\n  /* Brödtext */\n  .rte, .rte p, .multicolumn-card__info .rte, .image-with-text__text { line-height: 1.6; }\n\n  /* Knappar: skarpa hörn, tydlig vikt */\n  .button, .shopify-challenge__button, .customer button, button.shopify-payment-button__button--unbranded,\n  .cart__checkout-button {\n    font-family: var(--font-body-family);\n    font-weight: 700;\n    letter-spacing: 0.03em;\n  }\n\n  /* Fakta/etiketter i mono */\n  .price, .price-item, .product__tax, .announcement-bar__message, .caption-with-letter-spacing,\n  [class*=\"bryda-founder-\"] .eyebrow,\n  [class*=\"bryda-steps-\"] .eyebrow,\n  [class*=\"bryda-steps-\"] .step .n,\n  [class*=\"bryda-testi-\"] .eyebrow,\n  [class*=\"bryda-lfooter-\"] .col h3,\n  [class*=\"bryda-lfooter-\"] .copyright {\n    font-family: var(--font-mono-family);\n    letter-spacing: 0.06em;\n  }\n  .announcement-bar__message { text-transform: uppercase; font-size: 1.2rem; }\n  .price-item { letter-spacing: 0.02em; font-weight: 500; }\n\n  /* Egna bryda-sektioner: kantigt i stället för runt */\n  [class*=\"bryda-founder-\"] .add-btn,\n  [class*=\"bryda-contact-\"] .submit-btn {\n    border-radius: 0 !important;\n    background: var(--bryda-mossa) !important;\n    color: #FAFBF7 !important;\n    font-family: var(--font-body-family);\n    font-weight: 700;\n    letter-spacing: 0.03em;\n  }\n  [class*=\"bryda-contact-\"] .field input,\n  [class*=\"bryda-contact-\"] .field textarea,\n  [class*=\"bryda-contact-\"] .form-status,\n  [class*=\"bryda-contact-\"] .info-item .icon-box,\n  [class*=\"bryda-testi-\"] .card,\n  [class*=\"bryda-testi-\"] .empty,\n  [class*=\"bryda-testi-\"] .eyebrow { border-radius: 2px !important; }\n  [class*=\"bryda-lfooter-\"] .social-row a { border-radius: 0 !important; }\n\n  [class*=\"bryda-founder-\"] h2,\n  [class*=\"bryda-steps-\"] h2,\n  [class*=\"bryda-testi-\"] h2,\n  [class*=\"bryda-contact-\"] h1 { font-stretch: 66%; font-weight: 900; letter-spacing: -0.02em; }\n\n  /* Bockar i fördelslistan */\n  .bryda-fordelar svg path { stroke: var(--bryda-mossa); }\n\n  /* Länkar och fokus i mossgrönt */\n  .rte a, .link:not(.header__menu-item) { color: var(--bryda-mossa); }\n  .color-inverse .rte a, .color-accent-1 .rte a, .color-inverse .link:not(.header__menu-item), .color-accent-1 .link:not(.header__menu-item) { color: #C3CCB6; }\n  .drawer .link, .cart-drawer .link { color: inherit; text-decoration: underline; }\n  *:focus-visible { outline-color: var(--bryda-mossa); }\n\n  /* Diskreta avdelare i Malört-ton */\n  .header-wrapper--border-bottom { border-bottom-color: rgba(27, 29, 23, 0.12); }\n  .shopify-section:has(#bryda-besk-markor) { display: none !important; }\n\n  /* Nya bryda-sektioner: samma rubrikstil */\n  [class*=\"bryda-arlig-\"] h2, [class*=\"bryda-paket-\"] h2, [class*=\"bryda-faq-\"] h2, [class*=\"bryda-varfor-\"] h2, [class*=\"bryda-tidslinje-\"] h2 { font-stretch: 66%; font-weight: 900; letter-spacing: -0.02em; }\n  .banner__heading.h1 { font-size: clamp(3.6rem, 7vw, 7.2rem); }\n</style>\n",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Fri frakt från 2 pennor",
+            "link": "shopify://products/bryda-nagelpennan"
+          }
+        },
+        "announcement-bar-1": {
+          "type": "announcement",
+          "settings": {
+            "text": "30 dagars öppet köp – ingen motivering krävs",
+            "link": "shopify://products/bryda-nagelpennan"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "announcement-bar-1"
+      ],
+      "settings": {
+        "color_scheme": "inverse",
+        "show_line_separator": false,
+        "show_social": false,
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "bryda-besk-stil"
+  ]
+}

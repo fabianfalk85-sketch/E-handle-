@@ -1,0 +1,107 @@
+{%- liquid
+  assign p = section.settings.product | default: all_products['bryda-nagelpennan']
+-%}
+{%- style -%}
+  .bryda-paket-{{ section.id }} { padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px; padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px; }
+  @media screen and (min-width: 750px) { .bryda-paket-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; } }
+  .bryda-paket-{{ section.id }} .wrap { max-width: 100rem; }
+  .bryda-paket-{{ section.id }} .eyebrow { font-family: var(--font-mono-family); font-size: 1.3rem; line-height: 1.5; letter-spacing: 0.04em; color: #4F5B45; margin: 0 0 1.2rem; max-width: 60ch; }
+  .bryda-paket-{{ section.id }} h2 { font-size: clamp(2.8rem, 2.2rem + 1.8vw, 4rem); line-height: 1.05; margin: 0; max-width: 24ch; text-wrap: balance; }
+  .bryda-paket-{{ section.id }} .lead { max-width: 60ch; margin: 2rem 0 0; font-size: 1.7rem; line-height: 1.6; }
+  @media screen and (min-width: 750px) { .bryda-paket-{{ section.id }} .lead { font-size: 1.8rem; } }
+  .bryda-paket-{{ section.id }} .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 4rem 0 0; align-items: stretch; }
+  .bryda-paket-{{ section.id }} .card { position: relative; display: flex; flex-direction: column; gap: 0.6rem; padding: 2.8rem 2.4rem 2.4rem; background: #F4F5F0; border: 1px solid #C9CDC0; color: #1B1D17; text-decoration: none; transition: border-color .15s, box-shadow .15s; }
+  .bryda-paket-{{ section.id }} .card:hover { border-color: #4F5B45; }
+  .bryda-paket-{{ section.id }} .card--hi { background: #fff; border: 2px solid #4F5B45; box-shadow: 0 8px 24px rgba(79,91,69,.14); }
+  .bryda-paket-{{ section.id }} .card:focus-visible { outline: 2px solid #4F5B45; outline-offset: 3px; }
+  .bryda-paket-{{ section.id }} .ribbon { position: absolute; top: 0; left: 2.4rem; transform: translateY(-50%); background: #4F5B45; color: #fff; font-family: var(--font-mono-family); font-size: 1.1rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.4rem 0.9rem; }
+  .bryda-paket-{{ section.id }} .name { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 2.2rem; }
+  .bryda-paket-{{ section.id }} .why { font-size: 1.4rem; line-height: 1.45; color: #5A5E52; min-height: 2rem; }
+  .bryda-paket-{{ section.id }} .prices { display: flex; align-items: baseline; flex-wrap: wrap; gap: 1rem; margin-top: 0.8rem; font-family: var(--font-mono-family); }
+  .bryda-paket-{{ section.id }} .price { font-size: 2.4rem; font-weight: 600; }
+  .bryda-paket-{{ section.id }} .compare { font-size: 1.4rem; color: #8A8E82; text-decoration: line-through; }
+  .bryda-paket-{{ section.id }} .each { font-family: var(--font-mono-family); font-size: 1.25rem; color: #5A5E52; }
+  .bryda-paket-{{ section.id }} .perks { list-style: none; margin: 1.2rem 0 1.8rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .bryda-paket-{{ section.id }} .perks li { margin: 0; font-family: var(--font-mono-family); font-size: 1.1rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.3rem 0.7rem; border: 1px solid #4F5B45; color: #4F5B45; }
+  .bryda-paket-{{ section.id }} .perks li.off { background: #4F5B45; color: #fff; }
+  .bryda-paket-{{ section.id }} .btn { margin-top: auto; display: flex; align-items: center; justify-content: center; min-height: 4.8rem; text-align: center; padding: 1.2rem 1rem; border: 1.5px solid #1B1D17; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 1.4rem; letter-spacing: 0.06em; text-transform: uppercase; }
+  .bryda-paket-{{ section.id }} .card--hi .btn { background: #4F5B45; border-color: #4F5B45; color: #fff; }
+  .bryda-paket-{{ section.id }} .foot { margin: 2.4rem 0 0; font-size: 1.5rem; line-height: 1.5; opacity: 0.8; }
+  @media screen and (max-width: 749px) {
+    .bryda-paket-{{ section.id }} .grid { grid-template-columns: 1fr; gap: 2.4rem; margin-top: 3.2rem; }
+    .bryda-paket-{{ section.id }} .card--hi { order: -1; }
+    .bryda-paket-{{ section.id }} .why { min-height: 0; }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width bryda-paket-{{ section.id }}">
+    <div class="wrap">
+    {%- if section.settings.eyebrow != blank -%}<p class="eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    <h2>{{ section.settings.heading }}</h2>
+    {%- if section.settings.text != blank -%}<p class="lead">{{ section.settings.text }}</p>{%- endif -%}
+    {%- if p != blank -%}
+      <div class="grid">
+        {%- for v in p.variants limit: 3 -%}
+          {%- liquid
+            assign qty = forloop.index
+            assign each = v.price | divided_by: qty | divided_by: 100.0 | round | times: 100
+            assign pct = 0
+            assign save = 0
+            if v.compare_at_price > v.price
+              assign save = v.compare_at_price | minus: v.price
+              assign pct = save | times: 100.0 | divided_by: v.compare_at_price | round
+            endif
+            case qty
+              when 1
+                assign why = 'Testa själv.'
+                assign ribbon = ''
+              when 2
+                assign why = 'En hemma, en i väskan.'
+                assign ribbon = 'Rekommenderas'
+              when 3
+                assign why = 'Hemma, väskan och jobbet.'
+                assign ribbon = 'Lägst pris per penna'
+            endcase
+          -%}
+          <a class="card{% if qty == 2 %} card--hi{% endif %}" href="{{ p.url }}?variant={{ v.id }}">
+            {%- if ribbon != '' -%}<span class="ribbon">{{ ribbon }}</span>{%- endif -%}
+            <span class="name">{{ v.title }}</span>
+            <span class="why">{{ why }}</span>
+            <span class="prices">
+              <span class="price">{{ v.price | money_without_trailing_zeros }}</span>
+              {%- if save > 0 -%}<span class="compare"><span class="visually-hidden">Ordinarie pris </span>{{ v.compare_at_price | money_without_trailing_zeros }}</span>{%- endif -%}
+            </span>
+            {%- if qty > 1 -%}<span class="each">{{ each | money_without_trailing_zeros }}/st</span>{%- endif -%}
+            <ul class="perks">
+              {%- if pct > 0 -%}<li class="off">−{{ pct }} %</li>{%- endif -%}
+              {%- if qty > 1 -%}<li>Fri frakt</li>{%- endif -%}
+            </ul>
+            <span class="btn">Välj {{ v.title }}</span>
+          </a>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+    {%- if section.settings.footnote != blank -%}<p class="foot">{{ section.settings.footnote }}</p>{%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Bryda Paket",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "product", "id": "product", "label": "Produkt" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Färgschema", "default": "background-1" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Välj paket" },
+    { "type": "text", "id": "heading", "label": "Rubrik", "default": "Ju fler, desto mer sparar du" },
+    { "type": "text", "id": "text", "label": "Ingress" },
+    { "type": "text", "id": "footnote", "label": "Text under" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 120, "step": 4, "unit": "px", "label": "Padding top", "default": 64 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 120, "step": 4, "unit": "px", "label": "Padding bottom", "default": 64 }
+  ],
+  "presets": [ { "name": "Bryda Paket" } ]
+}
+{% endschema %}
